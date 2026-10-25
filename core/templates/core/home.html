@@ -1,0 +1,151 @@
+
+{% extends "core/base.html" %}
+
+{% block title %}FoodBridge AI | Good Food, Better Future{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-copy">
+        <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            FOOD FOR GOOD. WASTE LESS.
+        </div>
+
+        <h1>
+            Good food deserves
+            <span>a second chance.</span>
+        </h1>
+
+        <p class="hero-description">
+            We are building a smarter way to connect surplus food
+            from providers with NGOs and community organisations
+            working to feed people in need.
+        </p>
+
+        <div class="hero-actions">
+            <a class="button button-primary"
+               href="#how-it-works">
+                Discover how it works
+                <span aria-hidden="true">→</span>
+            </a>
+
+            <a class="button button-outline"
+               href="#our-mission">
+                Our mission
+            </a>
+        </div>
+
+        <div class="hero-note">
+            <span class="note-check">✓</span>
+            A proposed platform for responsible food redistribution
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <div class="food-illustration" aria-hidden="true">🥗</div>
+
+        <div class="floating-card card-top">
+            <span class="floating-icon">♻</span>
+            <div>
+                <strong>Less food waste</strong>
+                <small>More responsible sharing</small>
+            </div>
+        </div>
+
+        <div class="floating-card card-bottom">
+            <span class="floating-icon">♥</span>
+            <div>
+                <strong>Community first</strong>
+                <small>Connecting people through food</small>
+            </div>
+        </div>
+
+        <div class="visual-caption">
+            <span class="caption-dot"></span>
+            Small actions. Meaningful impact.
+        </div>
+    </div>
+</section>
+
+<section class="principles" id="how-it-works">
+    <div class="section-heading">
+        <span class="section-kicker">HOW IT WORKS</span>
+        <h2>From surplus to shared meals.</h2>
+        <p>
+            A simple workflow designed to make food redistribution
+            easier to coordinate.
+        </p>
+    </div>
+
+    <div class="steps-grid">
+        <article class="step-card">
+            <span class="step-number">01</span>
+            <div class="step-icon">🍲</div>
+            <h3>List surplus food</h3>
+            <p>
+                Food providers share available quantities,
+                preparation details and collection deadlines.
+            </p>
+        </article>
+
+        <article class="step-card">
+            <span class="step-number">02</span>
+            <div class="step-icon">🤝</div>
+            <h3>Connect with NGOs</h3>
+            <p>
+                Community organisations discover suitable
+                donations and submit collection requests.
+            </p>
+        </article>
+
+        <article class="step-card">
+            <span class="step-number">03</span>
+            <div class="step-icon">🚚</div>
+            <h3>Coordinate collection</h3>
+            <p>
+                Providers and recipients coordinate pickup
+                and update the donation's progress.
+            </p>
+        </article>
+
+        <article class="step-card">
+            <span class="step-number">04</span>
+            <div class="step-icon">🌱</div>
+            <h3>Measure the impact</h3>
+            <p>
+                Completed donation records help us understand
+                how much food has been redistributed.
+            </p>
+        </article>
+    </div>
+</section>
+
+<section class="mission" id="our-mission">
+    <div>
+        <span class="section-kicker">OUR MISSION</span>
+        <h2>Better coordination can make a difference.</h2>
+        <p>
+            FoodBridge AI aims to reduce coordination gaps between
+            surplus food providers and organisations serving
+            communities. We will build reliable tracking first,
+            then explore data-driven matching and predictions.
+        </p>
+    </div>
+
+    <div class="mission-points">
+        <div><span>✓</span> Clear donation information</div>
+        <div><span>✓</span> Transparent request tracking</div>
+        <div><span>✓</span> Responsible food-handling information</div>
+        <div><span>✓</span> Evidence-based impact reporting</div>
+    </div>
+</section>
+
+<section class="closing" id="impact">
+    <span class="section-kicker">BUILT FOR COLLABORATION</span>
+    <h2>Let's make surplus food easier to share.</h2>
+    <p>
+        A connected process for providers, NGOs and volunteers.
+    </p>
+</section>
+{% endblock %}

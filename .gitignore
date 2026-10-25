@@ -1,0 +1,22 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment secrets
+.env
+.env.*
+
+# Local databases and backups
+db.sqlite3
+db_backup_before_accounts.sqlite3
+db_before_custom_user.sqlite3
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db

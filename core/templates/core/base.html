@@ -1,0 +1,48 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f8f3">
+    <meta name="description"
+          content="FoodBridge AI helps coordinate surplus food redistribution between food providers and community organisations.">
+    <title>{% block title %}FoodBridge AI{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="{% url 'core:home' %}">
+            <span class="brand-icon">F</span>
+            <span>FoodBridge <span class="brand-ai">AI</span></span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="{% url 'core:home' %}">Home</a>
+            <a href="{% url 'core:home' %}#how-it-works">How it works</a>
+            <a href="{% url 'core:home' %}#impact">Our impact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a class="button button-outline button-small"
+               href="/admin/">Admin</a>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="{% url 'core:home' %}">
+            <span class="brand-icon">F</span>
+            <span>FoodBridge <span class="brand-ai">AI</span></span>
+        </a>
+        <p>Connecting surplus food with communities that need it.</p>
+        <p class="footer-note">
+            A food redistribution coordination platform.
+        </p>
+    </footer>
+</body>
+</html>
